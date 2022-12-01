@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 1100px){
+    header{
+        position: static !important;
+    }
+    header>*{
+        position:absolute !important;
+    }
+    h1,nav{
+        transform: scale(0.9) !important;
+    }
+    #links{
+        line-height: 140% !important;
+    }
+    #article{
+        transform: scale(0.9) !important;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+        position: static !important;
+    }
+    header>*{
+        position:absolute !important;
+    }
+    h1,nav{
+        transform: scale(0.8) !important;
+    }
+    #links{
+        line-height: 140% !important;
+    }
+    #article{
+        transform: scale(0.7) !important;
+    }
+}
+@media only screen and (max-width: 600px){
+	header{
+        position: static !important;
+    }
+    header>*{
+        position:absolute !important;
+    }
+    h1,nav{
+        margin: 0px !important;
+        top:0 !important;
+        transform: scale(0.6) !important;
+        height: 100% !important;
+    }
+    #article{
+        top:85% !important;
+        transform: scale(0.6) !important;
+        left: 30% !important;
+    }
+}
+@media only screen and (max-width: 425px){
+    header{
+        position: static !important;
+    }
+    header>*{
+        position:absolute !important;
+    }
+    h1,nav{
+        margin: 0px !important;
+        top:0 !important;
+        transform: scale(0.5) !important;
+        height: 66% !important;
+    }
+    #links{
+        line-height: 145% !important;
+    }
+    #article{
+        top:80% !important;
+        transform: scale(0.5) !important;
+        left: 35% !important;
+    }
+}
+body {
+    background: radial-gradient(#1c2837fa 0%, #050608 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    flex-direction: column;
+    width: 28%;
+    height: 90%;
+    flex-direction: column;
+}
+
+header h1 {
+    position: fixed;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 10px rgb(108, 75, 255);
+    max-width: 100%;
+    max-height: 15%;
+    font-size: 45px;
+    margin: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 15%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    background-color: rgb(108, 75, 255);
+    border: 3px solid #FFFFFF;
+    box-shadow: 10px 10px 20px rgb(108, 75, 255);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 25%;
+}
+
+#links {
+    list-style-type: none;
+    line-height: 160%;
+    font-size: 25px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: rgb(108, 75, 255) !important;
+    background-color: #FFFFFF ;
+    box-shadow: 0px 0px 5px #FFFFFF;
+    transition: color 1.5s;
+}
+article{
+    position: absolute;
+    left: 62%;
+    margin-top: 5%;
+    transform: translate(-50%);
+    width: 62%;
+    padding:20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 20px;
+}
+article #head{
+    margin-top: 5%;
+}
+article div{
+    margin: 5%;
+    line-height: 1.5;
+}
+article a{
+    text-decoration: none;
+    color: rgb(108, 75, 255);
+}
